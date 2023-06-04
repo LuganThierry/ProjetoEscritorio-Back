@@ -73,27 +73,27 @@ Como a migração foi feita com base nos parâmetros sugeridos, os dados foram p
 <h2> Rotas da API </h2>
 
 A API possui três rotas do tipo GET:
-
-<h2> Tecnologias Utilizadas na API </h2>
-
-    1. Rota de processos por advogado
-https://localhost:7176/api/Processos/advogado/${id}/processos
+    
+<h3>Rota de processos por advogado</h3>
+    
+    https://localhost:7176/api/Processos/advogado/${id}/processos
     
 - Esta rota, quando fornecido um ID válido de um advogado, devolve todos os processos que estão vinculados a este ID. 
 - É a rota que efetivamente cumpre o requisito principal da proposta. Isto é, recebe um ID de advogado que, quando válido, devolve os processos deste. 
     
-    2. Rota de advogado por id
-https://localhost:7176/api/Pessoas/${id}
+ <h3>Rota de advogado por id</h3>
+    
+    https://localhost:7176/api/Pessoas/${id}
     
 - Esta rota é auxiliar. Foi criada primeiramente para testes. 
 - Foi aproveitada. O front-end recebe essa API, busca o nome do advogado relacionado ao ID e mostra na tela. 
     
-    3. Rota de pessoas no db
-https://localhost:7176/api/Pessoas
+ <h3>Rota de pessoas no db</h3>
+    
+    https://localhost:7176/api/Pessoas
     
 - Foi a primeira rota criada. Tinha intuito de validar a relação com banco de dados. 
 - Pode ser comentada sem afetar a aplicação. Como ela abertas mostra os dados do banco e não os altera, não se observou a necessidade de excluí-la. 
 
 
 Importante: A porta do localhost pode mudar de acordo com a conexão com o banco de dados. 
-
